@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/chat.css">
+
+    <title>Web Praktikum Lima</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <a href="index.html" class="navbar-brand">ZieApps</a>
+        <ul class="navbar-nav">
+            <li class="nav-item" id="item1">
+              <a class="nav-link" href="#" onclick="openTab1()">Kurs Mata Uang</a>
+            </li>
+            <!-- <li class="nav-item" id="item2">
+              <a class="nav-link" href="#" onclick="openTab2()">Chatting</a>
+            </li> -->
+          </ul>
+    </nav>
+    <div class="container">
+        <div class="tab1" id="tab1">
+            <table class="table">
+                <thead class="thead-primary">
+                    <tr>
+                        <th scope="col">Masukan Nilai</th>
+                        <th scope="col">Valas</th>
+                        <th scope="col">Nilai Rupiah</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" name="nilai" class="form-control" id="masukan" onchange="calc()" placeholder="Masukan Nilai"></td>
+                        <td>
+                            <select class="form-control" id="valas" onchange="calc()">
+                              <option value="9.915">Dollar US</option>
+                              <option value="13.472">Dollar Singapore</option>
+                              <option value="874">Ringgit Malaysia</option>
+                              <option value="120">Yen Jepang</option>
+                              <option value="15.888">Euro</option>
+                              <option value="3.592">Riyal Arab Saudi</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="nilai-rupiah" class="form-control" id="nilai-rupiah" placeholder="Nilai Rupiah" disabled></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="fixed-bottom" id="chat">
+            <div class="chat-body">
+                <div class="chat-text" id="chatBox">
+
+                </div>
+            <form class="form-inline">
+                <div class="form-group mb-2">
+                    <input type="text" class="form-control mb-2" id="input-chat">
+                </div>
+                <button class="btn btn-primary mb-2" onclick="sendMsg()">kirim</button>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

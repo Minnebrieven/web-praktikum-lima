@@ -1,0 +1,18 @@
+.chat-body {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    height: 250px;
+    width: 25%;
+}
+
+.chat-text{
+    border: 2px solid #dedede;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    height: 70%;
+    overflow-y: scroll;
+}
